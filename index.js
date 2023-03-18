@@ -5,7 +5,7 @@ let paragraphElem = document.createElement("new-task-container")
 paragraphElem.innerText = "We are one"
 
 
-function todoList() {
+function addItem() {
     let newItem = document.createElement("li");
     let inputValue = document.getElementById("myInput").value;
     let t = document.createTextNode(inputValue);
@@ -18,4 +18,4 @@ function todoList() {
     document.getElementById("myInput").value = "";
   
 }
-addButtonElement.addEventListener("click", todoList)
+addButtonElement.addEventListener("click", addItem)
