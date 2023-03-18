@@ -19,3 +19,12 @@ function addItem() {
   
 }
 addButtonElement.addEventListener("click", addItem)
+
+function deleteItem(){
+    let deleteButtonElement = document.getElementById("delete-button")
+    for (let i = 0; i < todoList.length; i++ ){
+        deleteButtonElement = todoList[i]           
+    }
+
+}
+deleteButtonElement.addEventListener("click", deleteItem)
