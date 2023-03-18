@@ -21,9 +21,8 @@ function addItem() {
 addButtonElement.addEventListener("click", addItem)
 
 function deleteItem(){
-    let deleteButtonElement = document.getElementById("delete-button")
-    for (let i = 0; i < todoList.length; i++ ){
-        deleteButtonElement = todoList[i]           
+        for (let i = 0; i < todoList.length; i++ ){
+        todoList[i] =  todoList.splice(1,1)         
     }
 
 }
