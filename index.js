@@ -19,10 +19,14 @@ function addItem() {
   
 }
 addButtonElement.addEventListener("click", addItem)
-
+localStorage.setItem('name', 'John')
+localStorage.getItem('name')
 function deleteItem(){
         for (let i = 0; i < todoList.length; i++ ){
-        todoList[i] =  todoList.splice(1,1)         
+        if (todoList[i] === newItem){
+            todoList.pop()
+        }
+                     
     }
 
 }
